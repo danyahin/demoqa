@@ -10,11 +10,23 @@ class BasePage:
     def visit(self):
         return self.driver.get(self.base_url)
 
+    def back(self):
+        self.driver.back()
+
+    def forward(self):
+        self.driver.forward()
+
+    def refresh(self):
+        self.driver.refresh()
+
     # def find_element(self, locator):
     #     return self.driver.find_element(By.CSS_SELECTOR, locator)
 
     def get_url(self):
         return self.driver.current_url
+
+    def get_title(self):
+        return self.driver.title
 
     def equal_url(self):
         if self.get_url() == self.base_url:
