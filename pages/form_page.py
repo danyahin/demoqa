@@ -24,3 +24,4 @@ class FormPage(BasePage):
 #         self.fantom_locator = WebElement(driver, '#state > div[class=" css-2613qy-menu"]')
         self.fantom_locator = WebElement(driver, '#state > div:nth-child(3)')
         self.fantom_locator_2 = WebElement(driver, '//div[@id="state"]/div[@class=" css-2613qy-menu"]', 'xpath')
+        self.btn_NCR = WebElement(driver, "//*[contains(text(), 'NCR')]", 'xpath')
