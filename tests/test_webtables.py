@@ -1,4 +1,5 @@
 from pages.web_tables import WebTables
+import time
 
 
 def test_webtables(browser):
@@ -15,6 +16,7 @@ def test_webtables(browser):
 
     # for elem in page.rows_delete_btns.find_elements():
     #     elem.click()
-#         browser.execute_script("arguments[0].click();", elem)
+    #     time.sleep(0.3)
+    #     browser.execute_script("arguments[0].click();", elem)
     assert page.no_rows_found_msg.exist()
 

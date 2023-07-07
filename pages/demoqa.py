@@ -9,6 +9,7 @@ class DemoQa(BasePage):
         super().__init__(driver, self.base_url)
         self.icon = WebElement(driver, '#app > header > a')
         self.btn_elements = WebElement(driver, 'div.category-cards > div:nth-child(1)')
+        self.level_5_headers = WebElement(driver, 'body h5')
         self.footer = WebElement(driver, '#app > footer > span')
 
     # def clicl_on_the_icon(self):
